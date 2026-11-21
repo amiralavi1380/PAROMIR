@@ -1,0 +1,687 @@
+{
+  "project": "PAROMIR",
+  "version": "1.0",
+  "date": "2026-11-21",
+  "scope": "Stage 1 — information architecture; not deployed pages",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "primaryMarket": "Russian-speaking B2B industrial buyers",
+  "existingRoutes": [
+    "/",
+    "/products/",
+    "/logistics/",
+    "/quality/",
+    "/contact/",
+    "/en/",
+    "/en/products/",
+    "/en/logistics/",
+    "/en/quality/",
+    "/en/contact/"
+  ],
+  "navigation": {
+    "primary": [
+      "products",
+      "applications",
+      "logistics",
+      "quality",
+      "about"
+    ],
+    "headerCTA": "contact",
+    "footer": [
+      "resources",
+      "contact",
+      "privacy",
+      "terms"
+    ],
+    "utility": [
+      "home",
+      "faq",
+      "cookies"
+    ]
+  },
+  "labels": {
+    "existing": "موجود در کد",
+    "next": "پیشنهاد اولویت اول",
+    "later": "توسعه بعدی",
+    "conditional": "مشروط به شواهد"
+  },
+  "nodes": [
+    {
+      "id": "home",
+      "parent": null,
+      "path": "/",
+      "ru": "Главная",
+      "en": "Home",
+      "stage": "existing",
+      "type": "landing",
+      "goal": "معرفی سریع ارزش پیشنهادی برای خریدار عمده روسی و هدایت به محصولات یا استعلام",
+      "cta": "Запросить предложение",
+      "sections": [
+        "ارزش پیشنهادی و گروه محصول",
+        "محصولات اصلی",
+        "روند استعلام تا تحویل",
+        "شواهد قابل اثبات",
+        "CTA استعلام"
+      ],
+      "need": "ارزش پیشنهادی تأییدشده؛ تصاویر مجاز محصول",
+      "priority": "P0",
+      "url_ru": "/",
+      "url_en": "/en/"
+    },
+    {
+      "id": "products",
+      "parent": "home",
+      "path": "/products/",
+      "ru": "Продукция и TDS",
+      "en": "Products & TDS",
+      "stage": "existing",
+      "type": "hub",
+      "goal": "مرکز دسته‌بندی و مقایسه ویژگی‌های فنی محصولات",
+      "cta": "Получить TDS",
+      "sections": [
+        "دسته‌بندی محصولات",
+        "جدول پارامترهای فنی",
+        "درخواست مشخصات و قیمت",
+        "شرایط سفارش"
+      ],
+      "need": "صرفاً مشخصات تاییدشده؛ TDS به درخواست",
+      "priority": "P0",
+      "url_ru": "/products/",
+      "url_en": "/en/products/"
+    },
+    {
+      "id": "stretch",
+      "parent": "products",
+      "path": "/products/stretch-film/",
+      "ru": "Стрейч-плёнка LLDPE",
+      "en": "LLDPE Stretch Film",
+      "stage": "next",
+      "type": "category",
+      "goal": "صفحه مادر برای سه مدل فیلم استرچ و هدایت به نوع مناسب",
+      "cta": "Подобрать плёнку",
+      "sections": [
+        "تفاوت دستی، ماشینی و جامبو",
+        "کاربردها",
+        "مشخصات قابل سفارشی‌سازی",
+        "راهنمای انتخاب",
+        "CTA"
+      ],
+      "need": "دامنه مشخصات قابل تأمین، عکس و TDS معتبر",
+      "priority": "P1",
+      "url_ru": "/products/stretch-film/",
+      "url_en": "/en/products/stretch-film/"
+    },
+    {
+      "id": "hand",
+      "parent": "stretch",
+      "path": "/products/stretch-film/hand/",
+      "ru": "Ручная стрейч-плёнка",
+      "en": "Hand Stretch Film",
+      "stage": "next",
+      "type": "product",
+      "goal": "معرفی مدل دستی و تبدیل درخواست فنی به لید",
+      "cta": "Запросить расчёт",
+      "sections": [
+        "کاربرد",
+        "پارامترهای ضخامت/عرض/وزن/بوشن",
+        "بسته‌بندی و MOQ",
+        "سؤالات خریدار",
+        "CTA"
+      ],
+      "need": "داده فنی و MOQ تأییدشده",
+      "priority": "P1",
+      "url_ru": "/products/stretch-film/hand/",
+      "url_en": "/en/products/stretch-film/hand/"
+    },
+    {
+      "id": "machine",
+      "parent": "stretch",
+      "path": "/products/stretch-film/machine/",
+      "ru": "Машинная стрейч-плёнка",
+      "en": "Machine Stretch Film",
+      "stage": "next",
+      "type": "product",
+      "goal": "پاسخ به استعلام فیلم دستگاهی با تمرکز بر کشش و سازگاری خط",
+      "cta": "Запросить расчёт",
+      "sections": [
+        "کاربرد ماشینی",
+        "pre-stretch/force",
+        "ابعاد/ضخامت/وزن",
+        "تطبیق با دستگاه",
+        "CTA"
+      ],
+      "need": "TDS و بازه pre-stretch تأییدشده",
+      "priority": "P1",
+      "url_ru": "/products/stretch-film/machine/",
+      "url_en": "/en/products/stretch-film/machine/"
+    },
+    {
+      "id": "jumbo",
+      "parent": "stretch",
+      "path": "/products/stretch-film/jumbo/",
+      "ru": "Джамбо-рулоны",
+      "en": "Jumbo Rolls",
+      "stage": "next",
+      "type": "product",
+      "goal": "هدف‌گیری تبدیل‌کنندگان و خریداران رول مادر",
+      "cta": "Запросить спецификацию",
+      "sections": [
+        "کاربرد رول مادر",
+        "عرض/وزن/بوشن",
+        "شرایط تبدیل و بسته‌بندی",
+        "CTA"
+      ],
+      "need": "ابعاد مجاز، وزن و برنامه تأمین تأییدشده",
+      "priority": "P1",
+      "url_ru": "/products/stretch-film/jumbo/",
+      "url_en": "/en/products/stretch-film/jumbo/"
+    },
+    {
+      "id": "pet",
+      "parent": "products",
+      "path": "/products/pet-strapping/",
+      "ru": "ПЭТ-лента",
+      "en": "PET Strapping",
+      "stage": "next",
+      "type": "product",
+      "goal": "استعلام تسمه PET بر مبنای عرض، ضخامت و مقاومت کششی",
+      "cta": "Получить предложение",
+      "sections": [
+        "کاربرد",
+        "پارامترهای فنی",
+        "سازگاری با تجهیزات",
+        "حمل و بسته‌بندی",
+        "CTA"
+      ],
+      "need": "مقاومت و ابعاد آزمون‌شده",
+      "priority": "P1",
+      "url_ru": "/products/pet-strapping/",
+      "url_en": "/en/products/pet-strapping/"
+    },
+    {
+      "id": "shrink",
+      "parent": "products",
+      "path": "/products/shrink-film/",
+      "ru": "Термоусадочная плёнка",
+      "en": "Shrink Film",
+      "stage": "next",
+      "type": "product",
+      "goal": "هدایت مشتری به انتخاب فیلم شیرینک متناسب با خط بسته‌بندی",
+      "cta": "Запросить параметры",
+      "sections": [
+        "کاربردها",
+        "ضخامت/عرض/خواص انقباض",
+        "نیازهای خط بسته‌بندی",
+        "CTA"
+      ],
+      "need": "خواص جمع‌شوندگی تأییدشده",
+      "priority": "P1",
+      "url_ru": "/products/shrink-film/",
+      "url_en": "/en/products/shrink-film/"
+    },
+    {
+      "id": "agri",
+      "parent": "products",
+      "path": "/products/agricultural-film/",
+      "ru": "Сельскохозяйственная плёнка",
+      "en": "Agricultural Film",
+      "stage": "next",
+      "type": "product",
+      "goal": "معرفی کاربرد و جمع‌آوری نیاز فنی و زمان‌بندی فصل",
+      "cta": "Обсудить поставку",
+      "sections": [
+        "کاربرد کشاورزی",
+        "نوع ساختار/عرض/ضخامت",
+        "فصل و حجم سفارش",
+        "CTA"
+      ],
+      "need": "محصولات و ویژگی‌های واقعی قابل تأمین",
+      "priority": "P1",
+      "url_ru": "/products/agricultural-film/",
+      "url_en": "/en/products/agricultural-film/"
+    },
+    {
+      "id": "applications",
+      "parent": "home",
+      "path": "/applications/",
+      "ru": "Решения по применению",
+      "en": "Applications",
+      "stage": "next",
+      "type": "hub",
+      "goal": "ورود مشتری از مسیر مسئله و صنعت، نه صرفاً اسم محصول",
+      "cta": "Подобрать решение",
+      "sections": [
+        "سناریوهای کاربردی",
+        "مسئله و راه‌حل",
+        "ارجاع به محصولات مرتبط",
+        "CTA"
+      ],
+      "need": "تطبیق هر کاربرد با محصول قابل تأمین",
+      "priority": "P1",
+      "url_ru": "/applications/",
+      "url_en": "/en/applications/"
+    },
+    {
+      "id": "pallet",
+      "parent": "applications",
+      "path": "/applications/palletizing/",
+      "ru": "Фиксация паллет",
+      "en": "Pallet Stabilization",
+      "stage": "next",
+      "type": "application",
+      "goal": "پیشنهاد فیلم استرچ برای تثبیت پالت",
+      "cta": "Подобрать плёнку",
+      "sections": [
+        "چالش پایداری پالت",
+        "نوع فیلم پیشنهادی",
+        "فاکتورهای فنی استعلام",
+        "CTA"
+      ],
+      "need": "ادعاهای عملکردی صرفاً با سند",
+      "priority": "P1",
+      "url_ru": "/applications/palletizing/",
+      "url_en": "/en/applications/palletizing/"
+    },
+    {
+      "id": "strapping",
+      "parent": "applications",
+      "path": "/applications/strapping/",
+      "ru": "Промышленная обвязка",
+      "en": "Industrial Strapping",
+      "stage": "next",
+      "type": "application",
+      "goal": "جذب خریدار بر اساس نیاز تسمه‌کشی بار",
+      "cta": "Запросить PET-ленту",
+      "sections": [
+        "سناریوهای تسمه‌کشی",
+        "پارامتر انتخاب PET",
+        "اتصال به محصول",
+        "CTA"
+      ],
+      "need": "سازگاری واقعی تجهیزات",
+      "priority": "P1",
+      "url_ru": "/applications/strapping/",
+      "url_en": "/en/applications/strapping/"
+    },
+    {
+      "id": "farming",
+      "parent": "applications",
+      "path": "/applications/agriculture/",
+      "ru": "Аграрные применения",
+      "en": "Agricultural Applications",
+      "stage": "next",
+      "type": "application",
+      "goal": "جمع‌آوری تقاضای فیلم برای کاربردهای کشاورزی",
+      "cta": "Уточнить параметры",
+      "sections": [
+        "کاربردها",
+        "نیاز فنی",
+        "شرایط سفارش فصلی",
+        "CTA"
+      ],
+      "need": "داده واقعی محصول و بازار هدف",
+      "priority": "P1",
+      "url_ru": "/applications/agriculture/",
+      "url_en": "/en/applications/agriculture/"
+    },
+    {
+      "id": "logistics",
+      "parent": "home",
+      "path": "/logistics/",
+      "ru": "Логистика и документы",
+      "en": "Logistics & Documents",
+      "stage": "existing",
+      "type": "hub",
+      "goal": "رفع ابهام خریدار درباره مسیر، Incoterms و مدارک",
+      "cta": "Рассчитать поставку",
+      "sections": [
+        "مسیرها",
+        "شرایط تحویل",
+        "مدارک محتمل",
+        "هشدار وابستگی به HS code",
+        "CTA"
+      ],
+      "need": "همه شروط به‌صورت موردی تأیید شوند",
+      "priority": "P0",
+      "url_ru": "/logistics/",
+      "url_en": "/en/logistics/"
+    },
+    {
+      "id": "routes",
+      "parent": "logistics",
+      "path": "/logistics/routes/",
+      "ru": "Маршруты поставок",
+      "en": "Shipping Routes",
+      "stage": "later",
+      "type": "detail",
+      "goal": "تفکیک کریدور دریایی و زمینی بدون وعده زمان قطعی",
+      "cta": "Уточнить маршрут",
+      "sections": [
+        "انزلی–آستراخان",
+        "آستارا–روسیه",
+        "عوامل مؤثر بر زمان/هزینه",
+        "CTA"
+      ],
+      "need": "بررسی به‌روز مسیر و مقررات",
+      "priority": "P2",
+      "url_ru": "/logistics/routes/",
+      "url_en": "/en/logistics/routes/"
+    },
+    {
+      "id": "incoterms",
+      "parent": "logistics",
+      "path": "/logistics/incoterms/",
+      "ru": "Условия Incoterms",
+      "en": "Incoterms",
+      "stage": "later",
+      "type": "detail",
+      "goal": "توضیح گزینه‌های تحویل قابل مذاکره برای خرید B2B",
+      "cta": "Обсудить условия",
+      "sections": [
+        "مبانی Incoterms",
+        "تفاوت شرایط با توجه به مقصد",
+        "FAQ",
+        "CTA"
+      ],
+      "need": "تأیید قرارداد و حقوقی؛ عدم ارائه نرخ ثابت",
+      "priority": "P2",
+      "url_ru": "/logistics/incoterms/",
+      "url_en": "/en/logistics/incoterms/"
+    },
+    {
+      "id": "documents",
+      "parent": "logistics",
+      "path": "/logistics/documents/",
+      "ru": "Документы поставки",
+      "en": "Shipping Documents",
+      "stage": "later",
+      "type": "detail",
+      "goal": "شفافیت مدارک و وابستگی آن‌ها به کالا و مسیر",
+      "cta": "Уточнить документы",
+      "sections": [
+        "invoice/packing list",
+        "مدارک حمل",
+        "گواهی‌ها در صورت شمول",
+        "CTA"
+      ],
+      "need": "بررسی HS/EAC/گواهی مبدأ برای هر محموله",
+      "priority": "P2",
+      "url_ru": "/logistics/documents/",
+      "url_en": "/en/logistics/documents/"
+    },
+    {
+      "id": "quality",
+      "parent": "home",
+      "path": "/quality/",
+      "ru": "Качество и проверка партии",
+      "en": "Quality & Batch Checks",
+      "stage": "existing",
+      "type": "hub",
+      "goal": "ایجاد اعتماد با فرآیند قابل اثبات کنترل قبل از ارسال",
+      "cta": "Запросить протокол",
+      "sections": [
+        "چک‌لیست قبل از حمل",
+        "عکس و مستندات در صورت وجود",
+        "کنترل شمارش/لیبل",
+        "CTA"
+      ],
+      "need": "شواهد واقعی هر محموله",
+      "priority": "P0",
+      "url_ru": "/quality/",
+      "url_en": "/en/quality/"
+    },
+    {
+      "id": "inspection",
+      "parent": "quality",
+      "path": "/quality/inspection/",
+      "ru": "Предотгрузочная проверка",
+      "en": "Pre-shipment Inspection",
+      "stage": "later",
+      "type": "detail",
+      "goal": "توضیح مراحل کنترل قابل اجرا",
+      "cta": "Согласовать проверку",
+      "sections": [
+        "فهرست کنترل",
+        "روش تأیید",
+        "استثناها",
+        "CTA"
+      ],
+      "need": "روش اجرایی و نقش تامین‌کننده",
+      "priority": "P2",
+      "url_ru": "/quality/inspection/",
+      "url_en": "/en/quality/inspection/"
+    },
+    {
+      "id": "batch",
+      "parent": "quality",
+      "path": "/quality/batch-documents/",
+      "ru": "Документы партии",
+      "en": "Batch Documentation",
+      "stage": "later",
+      "type": "detail",
+      "goal": "مدارک قابل درخواست برای هر بچ را روشن کند",
+      "cta": "Запросить документы",
+      "sections": [
+        "TDS و تست‌ها در صورت وجود",
+        "عکس/لیبل/پالت",
+        "ردیابی بچ",
+        "CTA"
+      ],
+      "need": "نمونه واقعی قابل انتشار و مجوز",
+      "priority": "P2",
+      "url_ru": "/quality/batch-documents/",
+      "url_en": "/en/quality/batch-documents/"
+    },
+    {
+      "id": "about",
+      "parent": "home",
+      "path": "/about/",
+      "ru": "О PAROMIR",
+      "en": "About PAROMIR",
+      "stage": "next",
+      "type": "corporate",
+      "goal": "تعریف صادقانه نقش شرکت در زنجیره صادرات بدون ادعای کارخانه‌داری",
+      "cta": "Связаться с нами",
+      "sections": [
+        "هویت و مدل همکاری",
+        "بازار هدف و دسته محصولات",
+        "روش کار",
+        "اطلاعات حقوقی تأییدشده",
+        "CTA"
+      ],
+      "need": "ثبت قانونی، آدرس، اطلاعات اثبات‌پذیر",
+      "priority": "P1",
+      "url_ru": "/about/",
+      "url_en": "/en/about/"
+    },
+    {
+      "id": "resources",
+      "parent": "home",
+      "path": "/resources/",
+      "ru": "Полезные материалы",
+      "en": "Resources",
+      "stage": "later",
+      "type": "hub",
+      "goal": "آموزش و جذب جستجوهای فنی B2B",
+      "cta": "Задать вопрос",
+      "sections": [
+        "راهنماهای فنی",
+        "سوالات رایج",
+        "نمونه‌های پروژه در صورت تأیید",
+        "CTA"
+      ],
+      "need": "برنامه تولید محتوا و بازبینی فنی",
+      "priority": "P2",
+      "url_ru": "/resources/",
+      "url_en": "/en/resources/"
+    },
+    {
+      "id": "guide",
+      "parent": "resources",
+      "path": "/resources/stretch-film-guide/",
+      "ru": "Как выбрать стрейч-плёнку",
+      "en": "How to Choose Stretch Film",
+      "stage": "later",
+      "type": "editorial",
+      "goal": "پاسخ به دغدغه انتخاب فیلم دستی و ماشینی",
+      "cta": "Подобрать продукт",
+      "sections": [
+        "معیار انتخاب",
+        "جدول راهنما",
+        "اشتباهات رایج",
+        "CTA"
+      ],
+      "need": "بازبینی محتوای مهندسی",
+      "priority": "P2",
+      "url_ru": "/resources/stretch-film-guide/",
+      "url_en": "/en/resources/stretch-film-guide/"
+    },
+    {
+      "id": "faq",
+      "parent": "resources",
+      "path": "/resources/faq/",
+      "ru": "Частые вопросы",
+      "en": "FAQ",
+      "stage": "next",
+      "type": "editorial",
+      "goal": "کاهش سوال‌های تکراری درباره MOQ/TDS/ارسال/پرداخت",
+      "cta": "Отправить запрос",
+      "sections": [
+        "سؤالات محصول",
+        "سؤالات حمل",
+        "TDS/نمونه",
+        "سوالات سفارش",
+        "CTA"
+      ],
+      "need": "پاسخ‌های تأییدشده تجاری و حقوقی",
+      "priority": "P1",
+      "url_ru": "/resources/faq/",
+      "url_en": "/en/resources/faq/"
+    },
+    {
+      "id": "cases",
+      "parent": "resources",
+      "path": "/resources/cases/",
+      "ru": "Кейсы клиентов",
+      "en": "Customer Cases",
+      "stage": "conditional",
+      "type": "editorial",
+      "goal": "اثبات توان اجرا مانند الگوی Trioworld تنها با مجوز مشتری",
+      "cta": "Обсудить задачу",
+      "sections": [
+        "چالش",
+        "راه‌حل",
+        "نتیجه مستند",
+        "تأیید مشتری"
+      ],
+      "need": "حداقل یک پرونده واقعی و مجوز انتشار",
+      "priority": "P3",
+      "url_ru": "/resources/cases/",
+      "url_en": "/en/resources/cases/"
+    },
+    {
+      "id": "contact",
+      "parent": "home",
+      "path": "/contact/",
+      "ru": "Контакты / Запрос КП",
+      "en": "Contact / Request Quote",
+      "stage": "existing",
+      "type": "conversion",
+      "goal": "تبدیل بازدیدکننده B2B به درخواست قیمت کامل",
+      "cta": "Подготовить письмо",
+      "sections": [
+        "فرم محصول و مشخصات",
+        "نام شرکت",
+        "حجم و مقصد",
+        "کانال تماس",
+        "تأیید ارسال"
+      ],
+      "need": "فرم فعلی mailto است و نیاز به فعال‌سازی ایمیل دارد",
+      "priority": "P0",
+      "url_ru": "/contact/",
+      "url_en": "/en/contact/"
+    },
+    {
+      "id": "privacy",
+      "parent": "home",
+      "path": "/privacy/",
+      "ru": "Политика конфиденциальности",
+      "en": "Privacy Policy",
+      "stage": "next",
+      "type": "legal",
+      "goal": "شفاف‌سازی پردازش داده‌های فرم و آنالیتیکس پیش از لانچ",
+      "cta": "Связаться с нами",
+      "sections": [
+        "داده‌های جمع‌آوری‌شده",
+        "هدف پردازش",
+        "نگهداری و تماس"
+      ],
+      "need": "تدوین بر اساس عملیات واقعی و بازبینی حقوقی",
+      "priority": "P1",
+      "url_ru": "/privacy/",
+      "url_en": "/en/privacy/"
+    },
+    {
+      "id": "terms",
+      "parent": "home",
+      "path": "/terms/",
+      "ru": "Условия использования",
+      "en": "Terms of Use",
+      "stage": "next",
+      "type": "legal",
+      "goal": "تعیین محدوده مسئولیت محتوای سایت و شرایط استفاده",
+      "cta": "Связаться с нами",
+      "sections": [
+        "مالکیت و استفاده",
+        "محدودیت اطلاعات",
+        "راه تماس"
+      ],
+      "need": "متن حقوقی تأییدشده",
+      "priority": "P1",
+      "url_ru": "/terms/",
+      "url_en": "/en/terms/"
+    },
+    {
+      "id": "cookies",
+      "parent": "home",
+      "path": "/cookies/",
+      "ru": "Настройки cookies",
+      "en": "Cookie Settings",
+      "stage": "conditional",
+      "type": "legal",
+      "goal": "مدیریت کوکی در صورت استفاده از ابزارهای غیرضروری",
+      "cta": "Управлять настройками",
+      "sections": [
+        "ضروری و غیرضروری",
+        "تنظیم رضایت",
+        "تغییر رضایت"
+      ],
+      "need": "فقط در صورت استفاده واقعی از کوکی‌های غیرضروری",
+      "priority": "P3",
+      "url_ru": "/cookies/",
+      "url_en": "/en/cookies/"
+    },
+    {
+      "id": "notfound",
+      "parent": null,
+      "path": "/404.html",
+      "ru": "Страница не найдена",
+      "en": "Page Not Found",
+      "stage": "next",
+      "type": "system",
+      "goal": "بازیابی کاربر از مسیر شکسته",
+      "cta": "На главную",
+      "sections": [
+        "پیام کوتاه",
+        "جستجو یا لینک‌های مهم",
+        "بازگشت"
+      ],
+      "need": "هماهنگی با هاست و خطای HTTP 404",
+      "priority": "P1",
+      "url_ru": "/404.html",
+      "url_en": "/en/404.html"
+    }
+  ]
+}
