@@ -1,0 +1,91 @@
+{
+  "name": "PAROMIR Industrial Editorial",
+  "version": "1.0",
+  "stage": 3,
+  "date": "2026-11-21",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "palette": {
+    "ink": "#102F38",
+    "night": "#092E35",
+    "pine": "#0F585A",
+    "teal": "#157773",
+    "foam": "#DDEDE9",
+    "paper": "#F6F5F1",
+    "white": "#FFFFFF",
+    "stone": "#E6E8E2",
+    "line": "#DCE3E0",
+    "muted": "#63767A",
+    "copper": "#CF9567",
+    "success": "#2A775A",
+    "danger": "#A3433C"
+  },
+  "type": {
+    "stack": "Inter, Segoe UI, Arial, sans-serif",
+    "display": "clamp(42px,5.4vw,72px)/1.05 750",
+    "h1": "clamp(38px,4.5vw,62px)/1.1 750",
+    "h2": "clamp(28px,3vw,42px)/1.2 700",
+    "body": "16px/1.65 400",
+    "micro": "11px/1.4 700"
+  },
+  "spacing": {
+    "scale": [
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      32,
+      40,
+      48,
+      64,
+      80,
+      96
+    ],
+    "container": 1180,
+    "desktopGutter": 32,
+    "mobileGutter": 20
+  },
+  "radius": {
+    "button": 8,
+    "card": 18,
+    "feature": 28
+  },
+  "responsive": {
+    "mobile": 390,
+    "tablet": 768,
+    "desktop": 1200
+  },
+  "components": [
+    "header",
+    "hero",
+    "trust-strip",
+    "product-grid",
+    "application-grid",
+    "steps",
+    "split-feature",
+    "technical-table",
+    "faq",
+    "quote-form",
+    "cta",
+    "footer",
+    "breadcrumb",
+    "locale-toggle"
+  ],
+  "source": "docs/wireframes.json",
+  "routeCount": 30,
+  "layoutCount": 17,
+  "productionConditions": [
+    "Verify technical data and product availability",
+    "Manufacturer-approved photography",
+    "Legal entity details and privacy text",
+    "Russian commercial copy QA",
+    "Inquiry backend or tested mailbox",
+    "Actual responsive/accessibility device testing",
+    "Publication and SEO review"
+  ],
+  "warning": "Design concept only. It is not a deployed website and the UI preview must never claim to submit inquiries."
+}
