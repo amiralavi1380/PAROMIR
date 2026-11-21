@@ -1,13 +1,27 @@
 (() => {
- const toggle=document.getElementById('menu-toggle'), nav=document.getElementById('main-nav');
- if(toggle&&nav){toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);});}
- const form=document.getElementById('inquiry-form');if(!form)return;
- form.addEventListener('submit',async e=>{
-  e.preventDefault();if(!form.reportValidity())return;
-  const rows=Array.from(form.querySelectorAll('label')).map(l=>l.querySelector('span').textContent+': '+l.querySelector('input').value.trim());
-  const txt=[form.dataset.title,...rows].join('\n');
-  const status=document.getElementById('form-status');
-  try{await navigator.clipboard.writeText(txt);status.textContent=form.dataset.success;}
-  catch{status.textContent=form.dataset.error;const t=document.createElement('textarea');t.value=txt;t.rows=8;t.style.width='100%';t.readOnly=true;status.after(t);t.select();}
- });
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("main-nav");
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      const expanded = toggle.getAttribute("aria-expanded") !== "true";
+      toggle.setAttribute("aria-expanded", String(expanded));
+      nav.classList.toggle("open", expanded);
+    });
+  }
+  const form = document.getElementById("inquiry-form");
+  if (!form) return;
+  form.addEventListener("submit", event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    const rows = Array.from(form.querySelectorAll("label")).map(label => {
+      const title = label.querySelector("span").textContent.trim();
+      const value = label.querySelector("input").value.trim();
+      return title + ": " + value;
+    });
+    const subject = encodeURIComponent(form.dataset.title);
+    const body = encodeURIComponent(rows.join("\n"));
+    const recipient = form.dataset.recipient;
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(recipient)) return;
+    window.location.href = "mailto:" + recipient + "?subject=" + subject + "&body=" + body;
+  });
 })();

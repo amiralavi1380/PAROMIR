@@ -1,23 +1,14 @@
-# PAROMIR — Polymer Packaging Export Desk
+# PAROMIR
 
-A dependency-free static website starter for PAROMIR, built for Russian-first B2B industrial packaging export.
+Bilingual static website for industrial polymer packaging supply.
 
-## Pages
-Russian (default): `/`, `/products/`, `/logistics/`, `/quality/`, `/contact/`.
-English mirrors: `/en/`, `/en/products/`, `/en/logistics/`, `/en/quality/`, `/en/contact/`.
+## Languages
+- Russian: `/`, `/products/`, `/logistics/`, `/quality/`, `/contact/`
+- English: `/en/`, `/en/products/`, `/en/logistics/`, `/en/quality/`, `/en/contact/`
 
-## Preview
-Run `python -m http.server 8080` in the repository root, then browse to `http://localhost:8080/`.
+## Technical
+No build step or dependencies. Serve the repository root from a static host; directory URLs must resolve to their `index.html` files.
 
-## Deployment
-Upload repository contents to any static host (or configure the host's publish directory as repository root). Ensure URLs such as `/products/` resolve to `/products/index.html`.
+The inquiry form opens the visitor's email application with a prepared message to `export@paromir.com`. Activate this mailbox and test delivery before publishing. The form does not make an HTTP submission.
 
-## Before launch
-- Verify legal entity, genuine producer photos, batch TDS and quality certificates.
-- Confirm CT-3 eligibility, EAC and ISPM-15 obligations, customs rates, logistics, delivery dates and available payment methods before stating them as facts.
-- Add real business email/Telegram and a secure privacy-compliant form endpoint. The current form **only copies text**; it **does not send inquiries**.
-- Have a native Russian B2B editor proofread all Russian copy.
-- Remove draft `noindex,nofollow` on every HTML page only when ready to publish.
-- Test site reachability via Russian ISPs before committing to long-term hosting.
-
-No third-party fonts, analytics or tracking are present. No unverified commercial guarantees are advertised.
+Before launch, update the robots policy, add verified company contact information and manufacturer-approved imagery, confirm relevant export documentation, and arrange native Russian commercial proofreading.
