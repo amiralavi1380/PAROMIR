@@ -1,44 +1,39 @@
-# PAROMIR
+# PAROMIR — industrial packaging website
 
-Bilingual static website for industrial polymer packaging supply.
+Russian-first, fully static B2B website. Built from the approved design documents in `docs/`.
 
-## Languages
-- Russian: `/`, `/products/`, `/logistics/`, `/quality/`, `/contact/`
-- English: `/en/`, `/en/products/`, `/en/logistics/`, `/en/quality/`, `/en/contact/`
+## Structure
 
-## Technical
-No build step or dependencies. Serve the repository root from a static host; directory URLs must resolve to their `index.html` files.
+- 30 approved page routes in Russian and mirrored in English (60 HTML files).
+- Reusable rendering patterns based on the sitemap and wireframes; source generator: `scripts/build.mjs`.
+- Visual tokens and direction: `docs/design-tokens.json`, `docs/ui-design.html`.
+- CSS: `assets/site.css`. Browser behavior: `assets/site.js`.
+- Owned field photographs: `assets/photos/workshop-collage.jpg` with CSS tile positions.
 
-The inquiry form opens the visitor's email application with a prepared message to `export@paromir.com`. Activate this mailbox and test delivery before publishing. The form does not make an HTTP submission.
+## Development and publishing
 
-Before launch, update the robots policy, add verified company contact information and manufacturer-approved imagery, confirm relevant export documentation, and arrange native Russian commercial proofreading.
+```sh
+node scripts/build.mjs
+python -m http.server 8000
+```
 
-## Stage 1 — Information Architecture
+No NPM packages are necessary. All generated HTML lives at the appropriate route path.
+Publishing is intentionally disabled by `noindex,nofollow` until legal, quality and infrastructure review.
+A static host must serve `/products/index.html` for `/products/` URLs.
 
-This repository includes a **proposed** bilingual sitemap and page inventory for the RU-first B2B website. The sitemap is a planning artifact: pages labeled P1/P2/P3 are **not yet implemented**.
+## Quotations
 
-- [Interactive visual sitemap](docs/sitemap.html) — open the HTML file in a browser after downloading it.
-- [Sitemap specification](docs/sitemap.md) — full page tree, navigation, user journeys, content model, SEO and launch dependencies (Persian planning notes).
-- [Machine-readable sitemap](docs/sitemap.json) — RU/EN URL pairs, priorities, content requirements and page sections.
+The RFQ form validates essential inputs and can either:
+- open a prepared email to **export@paromir.com**; or
+- copy the drafted inquiry to clipboard with a manual text-select fallback.
 
-The 10 existing RU/EN routes remain unchanged. **Do not add navigation links to proposed URLs until the pages exist.**
+This flow **does not transmit to a server or assert delivery**. Before launch, activate the recipient mailbox, test incoming messages and add an approved privacy policy and legal entity information.
 
-## Stage 2 — Wireframes
+## Accuracy and launch checks
 
-The Stage 2 UX package covers all **30** proposed page routes with **17** reusable layouts, RU/EN previews, desktop/mobile modes, clickable mock navigation, and numbered design annotations.
-
-- [Interactive wireframe explorer](docs/wireframes.html) — download the HTML file and open in a browser (GitHub code viewer does not execute it).
-- [Wireframe design notes](docs/wireframes.md) — screen coverage, user journeys, risk notes, acceptance checklist.
-- [Wireframe specification](docs/wireframes.json) — data model of all templates and sections.
-
-These are **planning previews only**, not live site pages. No changes to the deployed website were made in Stage 2.
-
-## Stage 3 — UI Design
-
-A high-fidelity, self-contained PAROMIR UI design concept has been added for all 30 site-planning routes (RU/EN and desktop/mobile).
-
-- [Interactive UI concept](docs/ui-design.html) — download HTML and open locally to run the prototype; GitHub code view is not a browser preview.
-- [Design system tokens](docs/design-tokens.json) — palette, typography, spacing, components and breakpoints.
-- [Design handoff notes](docs/ui-design.md) — coverage, accessibility, content requirements and implementation steps.
-
-All layouts and actions in this prototype are **design previews only**. Conceptual product artwork and any placeholder content are not production claims. Live site source files were not changed.
+- Replace non-verified specification ranges with approved TDS / actual quality passports.
+- Confirm product origin, customs treatment, conformity documents, Incoterms and routes per shipment.
+- Native Russian export/commercial proofreading recommended.
+- Verify that the provided photographs are cleared for publication and do not expose unnecessary personal information.
+- Validate accessibility, internal links and mobile navigation before launch.
+- Replace the temporary robots policy only when approved.
