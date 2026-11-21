@@ -1,8 +1,8 @@
 (() => {
   'use strict';
   const t = {
-    ru:{prepared:"Почтовое приложение открыто. Проверьте адрес и отправьте письмо.",copied:"Текст запроса скопирован.",error:"Не удалось подготовить письмо. Скопируйте текст и отправьте самостоятельно.",invalid:"Проверьте обязательные поля и адрес электронной почты.",copyError:"Выделите подготовленный текст и скопируйте его."},
-    en:{prepared:"Your email application was opened. Review the recipient and send the message.",copied:"Inquiry copied to clipboard.",error:"Unable to prepare an email. Copy the request and send it manually.",invalid:"Please check required fields and the email address.",copyError:"Select and copy the prepared inquiry text."}
+    ru:{prepared:"Проверьте почтовое приложение: письмо подготовлено, но ещё не отправлено. Если приложение не открылось, скопируйте запрос.",copied:"Текст запроса скопирован.",error:"Не удалось подготовить письмо. Скопируйте текст и отправьте самостоятельно.",invalid:"Проверьте обязательные поля и адрес электронной почты.",copyError:"Выделите подготовленный текст и скопируйте его."},
+    en:{prepared:"Check your email application: the message is prepared but not sent. If it did not open, copy the inquiry.",copied:"Inquiry copied to clipboard.",error:"Unable to prepare an email. Copy the request and send it manually.",invalid:"Please check required fields and the email address.",copyError:"Select and copy the prepared inquiry text."}
   };
   const menu = document.querySelector('#site-nav');
   const toggle = document.querySelector('#menu-toggle');
