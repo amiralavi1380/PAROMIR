@@ -32,3 +32,13 @@ The Stage 2 UX package covers all **30** proposed page routes with **17** reusab
 - [Wireframe specification](docs/wireframes.json) — data model of all templates and sections.
 
 These are **planning previews only**, not live site pages. No changes to the deployed website were made in Stage 2.
+
+## Stage 3 — UI Design
+
+A high-fidelity, self-contained PAROMIR UI design concept has been added for all 30 site-planning routes (RU/EN and desktop/mobile).
+
+- [Interactive UI concept](docs/ui-design.html) — download HTML and open locally to run the prototype; GitHub code view is not a browser preview.
+- [Design system tokens](docs/design-tokens.json) — palette, typography, spacing, components and breakpoints.
+- [Design handoff notes](docs/ui-design.md) — coverage, accessibility, content requirements and implementation steps.
+
+All layouts and actions in this prototype are **design previews only**. Conceptual product artwork and any placeholder content are not production claims. Live site source files were not changed.
