@@ -22,3 +22,13 @@ This repository includes a **proposed** bilingual sitemap and page inventory for
 - [Machine-readable sitemap](docs/sitemap.json) — RU/EN URL pairs, priorities, content requirements and page sections.
 
 The 10 existing RU/EN routes remain unchanged. **Do not add navigation links to proposed URLs until the pages exist.**
+
+## Stage 2 — Wireframes
+
+The Stage 2 UX package covers all **30** proposed page routes with **17** reusable layouts, RU/EN previews, desktop/mobile modes, clickable mock navigation, and numbered design annotations.
+
+- [Interactive wireframe explorer](docs/wireframes.html) — download the HTML file and open in a browser (GitHub code viewer does not execute it).
+- [Wireframe design notes](docs/wireframes.md) — screen coverage, user journeys, risk notes, acceptance checklist.
+- [Wireframe specification](docs/wireframes.json) — data model of all templates and sections.
+
+These are **planning previews only**, not live site pages. No changes to the deployed website were made in Stage 2.
